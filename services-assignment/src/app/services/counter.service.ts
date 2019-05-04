@@ -7,5 +7,6 @@ export class CounterService {
   countFromActiveToInactive = 0;
   countFromInactiveToActive = 0;
 
-  constructor() {  }
+  constructor() {
+  }
 }

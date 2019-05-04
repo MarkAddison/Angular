@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {Component} from '@angular/core';
 import {UsersService} from '../services/users.service';
 import {CounterService} from '../services/counter.service';
 
@@ -15,5 +15,6 @@ export class InactiveUsersComponent {
   onSetToActive(id: number) {
     this.usersService.activeUsers.push(this.usersService.inactiveUsers[id]);
     this.usersService.inactiveUsers.splice(id, 1);
-    this.counterService.countFromInactiveToActive++;  }
+    this.counterService.countFromInactiveToActive++;
+  }
 }
