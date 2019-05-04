@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <app-active-users></app-active-users>
+      <app-inactive-users></app-inactive-users>
+    </div>
+    <p *ngIf="counterService.countFromInactiveToActive > 0">Switch from inactive to active count = {{counterService.countFromInactiveToActive}}</p>
+    <p *ngIf="counterService.countFromActiveToInactive > 0">Switch from active to inactive count = {{counterService.countFromActiveToInactive}}</p>
+  </div>
+</div>
